@@ -2,11 +2,12 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from pathlib import Path
 from string import Template
 
 from PySide6.QtGui import QColor, QFont, QPalette
 from PySide6.QtWidgets import QApplication
+
+from .utils.assets import asset_path
 
 
 @dataclass(frozen=True)
@@ -107,7 +108,7 @@ QComboBox QAbstractItemView { background: $surface; border: 1px solid $border; s
     selection-color: #FFFFFF; outline: none; }
 QCheckBox { spacing: 8px; }
 QCheckBox::indicator { width: 18px; height: 18px; border-radius: 5px; border: 1px solid $border; background: $surface; }
-QCheckBox::indicator:checked { background: $accent; border-color: $accent; image: url($check); }
+QCheckBox::indicator:checked { background: $accent; border-color: $accent; image: url("$check"); }
 
 /* ---- progress ---- */
 QProgressBar { background: $track; border: none; border-radius: 6px; height: 12px; text-align: center; color: transparent; }
@@ -145,7 +146,7 @@ QSplitter::handle { background: transparent; }
 """)
 
 
-_CHECK_ICON = (Path(__file__).resolve().parents[1] / "assets" / "icons" / "check.svg").as_posix()
+_CHECK_ICON = asset_path("icons", "check.svg").as_posix()   # frozen-aware; quoted in the QSS
 
 
 def build_stylesheet(p: Palette) -> str:

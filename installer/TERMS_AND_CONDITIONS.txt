@@ -1,0 +1,221 @@
+STOFREE - SOFTWARE LICENCE AGREEMENT (TERMS AND CONDITIONS)
+Stofree - Windows Disk Space Analyzer, version 1.0.0
+
+Developed by Shanuka B. Herath - Software Developer
+
+=====================================================================
+IMPORTANT - DRAFT FOR LEGAL REVIEW
+=====================================================================
+This document is an EDITABLE TEMPLATE. It has not been reviewed by a
+lawyer and must not be treated as legal advice. Text in [SQUARE
+BRACKETS] is a placeholder that the software owner must complete or
+confirm. Sections marked [LEGAL REVIEW REQUIRED] contain terms whose
+wording, enforceability or fitness for the owner's situation has not
+been established.
+
+Before this installer is distributed, the owner should: (1) fill in
+every placeholder, (2) have the whole document reviewed by a qualified
+legal professional, and (3) remove this notice.
+=====================================================================
+
+By clicking "I accept the agreement" and installing, copying or using
+Stofree (the "Software"), you agree to these terms. If you do not
+agree, click "I do not accept the agreement" and do not install or use
+the Software.
+
+---------------------------------------------------------------------
+1. SOFTWARE USAGE
+---------------------------------------------------------------------
+1.1  Stofree is a Windows disk space analyzer. It scans drives and
+     folders you choose and shows how storage is used, and can export
+     the results as CSV or JSON files that you choose to save.
+
+1.2  Subject to these terms, the owner grants you a non-exclusive,
+     non-transferable, revocable licence to install and use the
+     Software on [NUMBER OF DEVICES - TO BE COMPLETED] computers for
+     [PERMITTED PURPOSES, e.g. personal and/or internal business use -
+     TO BE COMPLETED].  [LEGAL REVIEW REQUIRED]
+
+1.3  The Software is licensed, not sold. No rights are granted other
+     than those expressly stated here.
+
+1.4  Stofree does not require administrator rights to scan. It is
+     designed to be read-only: it does not delete, move, rename or
+     modify the files and folders it scans, and it does not read the
+     contents of files - only names, sizes and folder structure. See
+     section 9 for what the Software does write to your computer.
+
+---------------------------------------------------------------------
+2. SOFTWARE OWNERSHIP AND INTELLECTUAL PROPERTY
+---------------------------------------------------------------------
+2.1  Stofree was developed by Shanuka B. Herath (Software Developer).
+     The copyright holder / owner of the Software, including its name,
+     logo, artwork and documentation, must be confirmed before release:
+     [COPYRIGHT HOLDER / OWNER NAME - TO BE CONFIRMED].
+     [LEGAL REVIEW REQUIRED]
+
+2.2  These terms do not transfer any ownership or intellectual
+     property rights to you. "Stofree" and the Stofree logo are
+     [TRADEMARK STATUS - TO BE CONFIRMED BY THE OWNER].
+
+2.3  Reports you export belong to you. The owner claims no rights in
+     the contents of your exported reports.
+
+---------------------------------------------------------------------
+3. RESTRICTIONS ON REDISTRIBUTION
+---------------------------------------------------------------------
+3.1  You may not, without the owner's prior written permission,
+     [REDISTRIBUTION POLICY - TO BE COMPLETED, for example: sell,
+     rent, lease, sublicense, publish, or distribute the Software or
+     this installer to others, or host it for download].
+
+3.2  You may not remove or alter copyright, trademark or other
+     ownership notices in the Software.
+
+3.3  [REVERSE ENGINEERING / MODIFICATION POLICY - TO BE COMPLETED.
+     Some jurisdictions give users rights that cannot be removed by
+     contract; the owner should confirm the wording.]
+     [LEGAL REVIEW REQUIRED]
+
+---------------------------------------------------------------------
+4. USER RESPONSIBILITY
+---------------------------------------------------------------------
+4.1  You are responsible for deciding which drives and folders to scan
+     and for how you use the results.
+
+4.2  Stofree only reports information. Any decision to delete, move or
+     back up files, which you carry out yourself using other tools,
+     is your responsibility. Back up important data before changing
+     your files.
+
+4.3  Scan results and exported reports contain file and folder names
+     and paths, which may reveal personal or confidential information.
+     You are responsible for protecting reports and for any sharing of
+     them.
+
+4.4  Reported sizes are logical file sizes and may differ from the
+     space actually used on disk. Some folders may be skipped because
+     of permissions or because they are links or junctions. Treat the
+     figures as informational.
+
+4.5  You must use the Software in accordance with applicable laws and
+     only on computers and data you are authorised to scan.
+
+---------------------------------------------------------------------
+5. WARRANTY DISCLAIMER
+---------------------------------------------------------------------
+5.1  TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SOFTWARE IS PROVIDED
+     "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND, WHETHER
+     EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTY OF
+     MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY OR
+     NON-INFRINGEMENT.
+
+5.2  The owner does not warrant that the Software will be error-free,
+     uninterrupted, or that its results will be complete or accurate.
+     The Software has not been certified by any third party and no
+     claim of legal or regulatory compliance is made.
+
+5.3  Some jurisdictions do not allow certain warranty exclusions, so
+     parts of this section may not apply to you.
+     [LEGAL REVIEW REQUIRED]
+
+---------------------------------------------------------------------
+6. LIMITATION OF LIABILITY
+---------------------------------------------------------------------
+6.1  TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE OWNER WILL NOT BE
+     LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR
+     PUNITIVE DAMAGES, OR FOR ANY LOSS OF DATA, PROFITS OR BUSINESS,
+     ARISING OUT OF OR RELATED TO THE USE OF, OR INABILITY TO USE, THE
+     SOFTWARE.
+
+6.2  [AGGREGATE LIABILITY CAP, IF ANY - TO BE COMPLETED]
+
+6.3  Nothing in these terms limits liability that cannot be limited
+     under applicable law.  [LEGAL REVIEW REQUIRED]
+
+---------------------------------------------------------------------
+7. SOFTWARE UPDATES
+---------------------------------------------------------------------
+7.1  Stofree does not check for updates and does not download
+     anything itself. New versions, if any, are provided only by
+     separate installers that you choose to run.
+
+7.2  [UPDATE AND SUPPORT POLICY - TO BE COMPLETED: whether updates or
+     support will be provided, for how long, and whether new versions
+     are covered by these terms.]  [LEGAL REVIEW REQUIRED]
+
+---------------------------------------------------------------------
+8. UNINSTALLATION
+---------------------------------------------------------------------
+8.1  You can uninstall Stofree at any time from Windows "Installed
+     apps" (Settings > Apps) or from the Start menu. Uninstalling
+     removes the program files installed by this installer.
+
+8.2  Uninstalling never deletes reports you exported. They are saved
+     wherever you chose and are not touched.
+
+8.3  Your settings and log files are kept in
+     %LOCALAPPDATA%\Stofree. The uninstaller asks whether you also
+     want to remove them. If you choose No, they are kept and will be
+     reused if you reinstall.
+
+8.4  The owner may end this licence if you breach these terms; you
+     must then stop using and uninstall the Software.
+     [LEGAL REVIEW REQUIRED]
+
+---------------------------------------------------------------------
+9. DATA STORED ON YOUR COMPUTER (DESCRIBES VERSION 1.0.0 BEHAVIOUR)
+---------------------------------------------------------------------
+9.1  Stofree's own code contains no network, upload, telemetry or
+     analytics functionality. It does not send your scan results or
+     any other information to the owner or to anyone else.
+     [OWNER TO RE-VERIFY FOR EACH RELEASE - LEGAL REVIEW REQUIRED]
+
+9.2  Stofree stores the following on your computer, in
+     %LOCALAPPDATA%\Stofree:
+     - settings.ini: your preferences (theme, animations, number of
+       largest files kept, removable drives option) and, for each
+       drive or folder you scanned, a short summary of the last scan
+       (the scanned path, time, file and folder counts, total size,
+       duration and error count);
+     - logs\stofree.log: a diagnostic log that can include the paths
+       that were scanned and the names of folders that could not be
+       read.
+
+9.3  Reports (CSV/JSON) are created only when you use the export
+     function, and only at the location you choose.
+
+9.4  The above describes what the Software does and is not a privacy
+     policy. [PRIVACY POLICY / DATA-PROTECTION NOTICE, IF REQUIRED IN
+     YOUR JURISDICTION - TO BE COMPLETED]  [LEGAL REVIEW REQUIRED]
+
+---------------------------------------------------------------------
+10. THIRD-PARTY COMPONENTS
+---------------------------------------------------------------------
+10.1 Stofree includes third-party open-source components, including
+     Qt for Python (PySide6) and psutil, and the Python runtime. They
+     are licensed under their own terms, which apply to those
+     components and are not changed by this agreement.
+     [LIST OF COMPONENTS, VERSIONS AND LICENCE TEXTS / NOTICES - TO BE
+     COMPLETED. Some licences (for example the LGPL used by Qt) carry
+     obligations when the software is redistributed.]
+     [LEGAL REVIEW REQUIRED]
+
+---------------------------------------------------------------------
+11. GENERAL
+---------------------------------------------------------------------
+11.1 Governing law and jurisdiction: [GOVERNING LAW AND COURTS - TO BE
+     COMPLETED]  [LEGAL REVIEW REQUIRED]
+
+11.2 If any part of these terms is found unenforceable, the remaining
+     parts stay in effect.
+
+11.3 These terms are the entire agreement between you and the owner
+     about the Software, unless the owner has agreed otherwise in
+     writing.
+
+11.4 Contact: [CONTACT DETAILS OF THE OWNER - TO BE COMPLETED]
+
+---------------------------------------------------------------------
+End of Terms and Conditions
+---------------------------------------------------------------------

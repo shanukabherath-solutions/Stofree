@@ -2,19 +2,13 @@
 from __future__ import annotations
 
 import logging
-import os
+import sys
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
-from .constants import APP_NAME
+from .paths import log_dir  # noqa: F401  (re-exported: other modules import it from here)
 
 LOGGER_NAME = "stofree"
-
-
-def log_dir() -> Path:
-    base = os.environ.get("LOCALAPPDATA")
-    root = Path(base) if base else Path.home() / ".local" / "share"
-    return root / APP_NAME.replace(" ", "") / "logs"
 
 
 def get_logger(name: str | None = None) -> logging.Logger:
@@ -30,9 +24,10 @@ def setup_logging(level: int = logging.INFO, directory: Path | None = None) -> P
     logger.propagate = False
     fmt = logging.Formatter("%(asctime)s [%(levelname)s] %(name)s: %(message)s")
 
-    stream = logging.StreamHandler()
-    stream.setFormatter(fmt)
-    logger.addHandler(stream)
+    if sys.stderr is not None:           # windowed (console=False) frozen builds have no stderr
+        stream = logging.StreamHandler()
+        stream.setFormatter(fmt)
+        logger.addHandler(stream)
 
     logfile: Path | None = None
     try:

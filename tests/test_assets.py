@@ -106,5 +106,5 @@ def test_ico_is_multi_resolution_and_packaging_includes_assets():
     with PIL.open(ico) as im:
         sizes = set(im.info["sizes"])
     assert {(16, 16), (32, 32), (48, 48), (256, 256)} <= sizes
-    spec = (ROOT / "packaging" / "stofree.spec").read_text(encoding="utf-8")
+    spec = (ROOT / "packaging" / "Stofree.spec").read_text(encoding="utf-8")
     assert '"assets"' in spec and "stofree.ico" in spec and 'name="Stofree"' in spec

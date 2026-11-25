@@ -8,8 +8,9 @@ from PySide6.QtCore import QObject, QSettings, Signal
 
 from .core.disk_scanner import ScanResult
 from .core.drive_manager import DriveInfo, list_drives
-from .utils.constants import APP_NAME, APP_ORG, DEFAULT_TOP_FILES
+from .utils.constants import DEFAULT_TOP_FILES
 from .utils.logger import get_logger
+from .utils.settings_store import create_settings
 from .workers.drive_worker import DriveWorker
 from .workers.scan_worker import ScanWorker
 
@@ -29,7 +30,7 @@ class AppState(QObject):
 
     def __init__(self, settings: QSettings | None = None) -> None:
         super().__init__()
-        self.settings = settings or QSettings(APP_ORG, APP_NAME)
+        self.settings = settings or create_settings()
         self.drives: list[DriveInfo] = []
         self.selected_root: str | None = None
         self.result: ScanResult | None = None
@@ -118,7 +119,10 @@ class AppState(QObject):
     # ------------------------------------------------------------------ last scan info
     def _load_last_scans(self) -> dict[str, dict]:
         try:
-            data = json.loads(str(self.settings.value("last_scans", "{}")))
+            raw = self.settings.value("last_scans", "{}")
+            if isinstance(raw, (list, tuple)):      # INI files split unquoted commas into a list
+                raw = ",".join(str(x) for x in raw)
+            data = json.loads(str(raw))
             return data if isinstance(data, dict) else {}
         except (ValueError, TypeError):
             return {}
